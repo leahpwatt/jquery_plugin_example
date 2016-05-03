@@ -1,0 +1,34 @@
+* {
+	font-family: verdana, arial, helvetica, serif;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+body {
+	background-color: #e0ebeb;
+}
+
+.note-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 600px;
+}
+
+.note {
+  text-decoration: underline;
+  color: black;
+}
+
+.note:hover::after {
+  content: attr(desc);
+  position: absolute;
+  top: 0;
+  right: 640px;
+  width: 150px;
+  height: 100%;
+  border-right: 1px solid black;
+  padding-right: 9px;
+}
